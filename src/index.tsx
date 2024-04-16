@@ -3,15 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {GlobalStyles} from "./components/GlobalStyle";
+import {GlobalStyles} from "./components/GlobalStyles";
+import {myTheme} from "./components/myTheme";
+import {ThemeProvider} from "styled-components";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
+        <ThemeProvider theme={myTheme}>
         <App/>
         <GlobalStyles/>
+        </ThemeProvider>
     </React.StrictMode>
 );
 

@@ -17,7 +17,8 @@ function App() {
             <Contant/>
             <Footer/>
         </div>
-    );
+    )
+        ;
 }
 
 export default App;

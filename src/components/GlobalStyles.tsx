@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {myTheme} from "./myTheme";
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -8,8 +9,9 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0px;
     box-sizing: border-box;
   }
-
   body {
-    background-color: #191919;
+    background-color: ${myTheme.colors.bcgColor};
+    font-family: Poppins, sans-serif;
+    margin: 0 auto;
   }
 `

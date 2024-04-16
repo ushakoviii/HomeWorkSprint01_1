@@ -1,23 +1,35 @@
 import React from 'react';
-import Icon from "./Icon";
 import styled from "styled-components";
+import {Icon} from "./Icon";
+
 
 export const StyledLinkProject = () => {
     return (
-        <StyledLink>
-            <div>
+        <StyledLinks>
+            <StyledLink>
                 <Icon width={"18"} height={"18"} viewBox={"0 0 18 18"} iconId={"link"}/>
-                <a href={""}>Live Preview</a>
-            </div>
-            <div>
+                <StyledLinkA href={""}>Live Preview</StyledLinkA>
+            </StyledLink>
+            <StyledLink>
                 <Icon width={"20"} height={"20"} viewBox={"0 0 20 20"} iconId={"link2"}/>
-                <a href={""}>View Code</a>
-            </div>
-        </StyledLink>
+                <StyledLinkA href={""}>View Code</StyledLinkA>
+            </StyledLink>
+        </StyledLinks>
     );
 };
+const StyledLinks = styled.div `
+  display: flex;
+  gap: 50px;
+  padding: 0px 30px;
+  margin-top: 20px;
+`
 const StyledLink = styled.div `
   display: flex;
-  justify-content: flex-start;
-  gap: 120px;
+  align-items: center;
+`
+const StyledLinkA = styled.a `
+  font-family: Poppins;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-left: 10px;
 `

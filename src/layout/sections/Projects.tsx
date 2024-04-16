@@ -10,38 +10,43 @@ import project5 from '../../images/projectPhoto/project5.png'
 import project6 from '../../images/projectPhoto/project6.png'
 import {StyledTitleSection} from "../../components/StyledTitleSection";
 import { StyledSection } from '../../components/StyledSection';
+import {StyledPSection} from "../../components/StyledPSection";
+import {Container} from "../../components/Container";
 
 export const Projects = () => {
     return (
         <StyledSection>
-            <StyledTitleSection>Projects</StyledTitleSection>
-            <p>Things I’ve built so far</p>
-            <FlexWraper>
-                <Project src={project1} title={"Project Tile goes here"}
-                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                         stack={"HTML , JavaScript, SASS, React"}
-                />
-                <Project src={project2} title={"Project Tile goes here"}
-                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                         stack={"HTML , JavaScript, SASS, React"}
-                />
-                <Project src={project3} title={"Project Tile goes here"}
-                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                         stack={"HTML , JavaScript, SASS, React"}
-                />
-                <Project src={project4} title={"Project Tile goes here"}
-                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                         stack={"HTML , JavaScript, SASS, React"}
-                />
-                <Project src={project5} title={"Project Tile goes here"}
-                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                         stack={"HTML , JavaScript, SASS, React"}
-                />
-                <Project src={project6} title={"Project Tile goes here"}
-                         text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                         stack={"HTML , JavaScript, SASS, React"}
-                />
-            </FlexWraper>
+            <Container>
+                <StyledTitleSection>Projects</StyledTitleSection>
+                <StyledPSection>Things I’ve built so far</StyledPSection>
+                <FlexWraper align={"center"} justify={"center"} wrap={"wrap"} gap={"50px"}>
+                    <Project src={project1} title={"Project Tile goes here"}
+                             text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                             stack={"HTML , JavaScript, SASS, React"}
+                    />
+                    <Project src={project2} title={"Project Tile goes here"}
+                             text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                             stack={"HTML , JavaScript, SASS, React"}
+                    />
+                    <Project src={project3} title={"Project Tile goes here"}
+                             text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                             stack={"HTML , JavaScript, SASS, React"}
+                    />
+                    <Project src={project4} title={"Project Tile goes here"}
+                             text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                             stack={"HTML , JavaScript, SASS, React"}
+                    />
+                    <Project src={project5} title={"Project Tile goes here"}
+                             text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                             stack={"HTML , JavaScript, SASS, React"}
+                    />
+                    <Project src={project6} title={"Project Tile goes here"}
+                             text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                             stack={"HTML , JavaScript, SASS, React"}
+                    />
+                </FlexWraper>
+            </Container>
         </StyledSection>
+
     );
 };

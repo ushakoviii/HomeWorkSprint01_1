@@ -1,5 +1,6 @@
 import React from 'react';
 import spritesvg from '../images/spritesvg.svg'
+import styled from "styled-components";
 type IconPropsType = {
     iconId: string;
     width: string;
@@ -8,10 +9,11 @@ type IconPropsType = {
 }
 export const Icon = (props: IconPropsType) => {
     return (
-        <svg width={props.width} height={props.height} viewBox={props.viewBox} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <StyledSvg width={props.width} height={props.height} viewBox={props.viewBox} fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={`${spritesvg}#${props.iconId}`}/>
-        </svg>
+        </StyledSvg>
     );
 };
+const StyledSvg = styled.svg `
 
-export default Icon;
+`

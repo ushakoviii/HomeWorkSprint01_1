@@ -73,5 +73,3 @@ export const IconLogoColor = () => {
         </svg>
     );
 };
-
-export default IconLogoColor;
